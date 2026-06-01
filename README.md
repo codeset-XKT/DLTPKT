@@ -7,17 +7,32 @@ contains the release-oriented main experiment code on the processed
 
 ## Overview
 
-DLTPKT models the learner's dynamic knowledge-transfer process through
-hierarchical skill and big-concept states. The model builds directed static
-structures from role-projected node embeddings, captures local transfer clues,
-and propagates state updates across the hierarchy. The prediction head combines
-hierarchical state readout with ability-difficulty matching and exposes
-skill-layer and big-concept-layer mastery readouts for case analysis.
+Unlike interpretable knowledge tracing methods that mainly explain why a
+prediction is made at a specific decision moment, DLTPKT focuses on how the
+learner's cognitive states evolve throughout continuous learning. It models
+dynamic learning transfer as four connected phases:
+
+- **Perception:** identifies local transfer clues from interaction-triggered
+  cognitive changes.
+- **Induction:** consolidates these clues into dynamic transfer capabilities at
+  the skill layer and the latent big-concept layer.
+- **Transfer:** models the propagation, aggregation, and radiation of knowledge
+  states along hierarchical structures.
+- **Adjustment:** adaptively updates cognitive states using interaction
+  feedback and time-aware forgetting effects.
+
+This process-level interpretation chain is complemented by hierarchical
+mastery readouts and ability-difficulty matching for next-response prediction.
+
+## Framework
+
+![DLTPKT framework](assets/framework.png)
 
 ## Repository Structure
 
 ```text
 DLTPKT/
+|-- assets/framework.png
 |-- checkpoints/
 |   `-- DLTPKT_statics_best.pth  # legacy reference checkpoint
 |-- data/statics/
