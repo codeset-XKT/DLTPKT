@@ -1,0 +1,8 @@
+{
+  "model": "DLTPKT",
+  "dataset": "statics",
+  "auc": 0.8810512377253192,
+  "acc": 0.8324023703128036,
+  "rmse": 0.40938690304756165,
+  "source": "Original project baseline_results.csv"
+}
