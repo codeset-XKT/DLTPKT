@@ -72,7 +72,3 @@ To evaluate another compatible checkpoint:
 ```bash
 python evaluate.py --checkpoint path/to/DLTPKT_statics_best.pth
 ```
-
-The file under `checkpoints/` is retained as a legacy artifact. It predates the
-current structural-role projection and mastery-readout modules and is not
-compatible with the current model.
