@@ -22,7 +22,6 @@ DLTPKT-Master/
 |   `-- model.py
 |-- docs/architecture.md
 |-- evaluate.py
-|-- reference_results.json
 |-- requirements.txt
 `-- train.py
 ```
