@@ -1,12 +1,23 @@
 # DLTPKT
 
-Release-oriented main experiment code for **DLTPKT(DLTPKT: Interpretable Knowledge Tracing for Dynamic Learning Transfer Process)** on the processed
+Official implementation accompanying the manuscript **DLTPKT: Interpretable
+Knowledge Tracing for Dynamic Learning Transfer Process**. This repository
+contains the release-oriented main experiment code on the processed
 **Statics** dataset.
+
+## Overview
+
+DLTPKT models the learner's dynamic knowledge-transfer process through
+hierarchical skill and big-concept states. The model builds directed static
+structures from role-projected node embeddings, captures local transfer clues,
+and propagates state updates across the hierarchy. The prediction head combines
+hierarchical state readout with ability-difficulty matching and exposes
+skill-layer and big-concept-layer mastery readouts for case analysis.
 
 ## Repository Structure
 
 ```text
-DLTPKT-Master/
+DLTPKT/
 |-- checkpoints/
 |   `-- DLTPKT_statics_best.pth  # legacy reference checkpoint
 |-- data/statics/
