@@ -3,10 +3,6 @@
 Release-oriented main experiment code for **DLTPKT(DLTPKT: Interpretable Knowledge Tracing for Dynamic Learning Transfer Process)** on the processed
 **Statics** dataset.
 
-The repository intentionally excludes baseline implementations, ablation
-studies, hyperparameter sweeps, history snapshots, and post-hoc analysis
-scripts.
-
 ## Repository Structure
 
 ```text
